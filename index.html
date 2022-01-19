@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Etch a sketch</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="interface">
+        <div class='sidebar'>
+          <p><span class = 'bold'>Click+hold left</span> mouse button to <span class="bold">draw</span>.</p>
+          <p><span class="bold">Click+hold middle</span> mouse button to <span class="bold">erase</span>.</p>
+          <span class="separator"></span>
+          <label for="grid_size"><span class="bold">Set grid size:</span></label>
+          <select name="grid_size" id="grid_size">
+            <option value = '8'>8px</option>
+            <option value = '16'>16px</option>
+            <option value = '32'>32px</option>
+            <option value = '64'>64px</option>
+          </select>
+          <span class="separator"></span>
+          <span class="bold">Set color:</span><label for="colorpicker"></label>
+          <input type="color" id="colorpicker" value="#0000ff">
+          <span class="separator"></span>
+          <button onclick = 'clearPixelGrid()'>Clear</button>
+        </div>
+        <div class="pixelContainer"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

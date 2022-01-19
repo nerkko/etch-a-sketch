@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Red+Hat+Mono:wght@300;500&display=swap');
+
+html {
+  background: rgb(41, 41, 41);
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(207, 207, 207)
+}
+
+h1, h2, h3 {
+  font-family: 'Major Mono Display', monospace;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+}
+
+.bold {
+  font-weight: 500;
+}
+.container {
+  padding: 2em;
+  margin: 7em auto;
+  text-align: center;
+}
+
+.interface {
+  display: inline-flex;
+  justify-content: center;
+  gap: 40px;
+  width: auto;
+  padding: 20px;
+}
+
+.pixelContainer {
+  width: 1024px;
+  height: 1024px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color:rgb(54, 54, 54)
+}
+
+.pixelContainer:hover{
+  cursor: wait;
+}
+
+.sidebar{
+  padding: 2em 1em 2em 5em;
+  text-align: left;
+  border-left: 2px solid rgb(54, 54, 54);
+}
+
+span.separator {
+  display: block;
+  margin-top: 2em;
+}
+
+select {
+  background: none;
+  border: none;
+  color: rgb(207, 207, 207);
+}
+
+select option {
+  background: rgb(41, 41, 41);
+}
+
+input {
+  margin-top: -5px;
+}
+
+input[type = "color"] {
+  background-color: rgb(41, 41, 41);;
+  border: none;
+  position: relative;
+  top: 4px;
+}
+
+button {
+  background: rgb(54, 54, 54);
+  color: rgb(207, 207, 207);
+  border: none;
+  border: 2px solid rgb(54, 54, 54);
+  font-family: "Red Hat Mono", monospace;
+  font-weight: 300;
+  padding: 0.2em 2em;
+  color: white;
+}
